@@ -37,3 +37,12 @@ console.log(result)
 var findNumberIn2DArray = function(matrix : number[][], target: number) {
   return matrix.flat(Infinity).includes(target);
 };
+
+// 请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
+function replaceSpace(s: string): string {
+  return s.replace(/\s/g, '%20')
+};
+
+// console.log(replaceSpace('We are happy.'))
+
+// 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
