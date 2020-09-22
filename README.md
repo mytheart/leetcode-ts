@@ -1,26 +1,15 @@
-# leetcode-ts
-使用 TypeScript + React + Vite 练习 leetcode
+# umi project
 
-## 字符串/数组
+## Getting Started
 
-## 二分查找
+Install dependencies,
 
-## 递归
+```bash
+$ yarn
+```
 
-## 二叉树
+Start the dev server,
 
-## 动态规划
-
-## 链表
-
-## 栈/队列
-
-## 排序
-
-## 贪心算法
-
-## 双指针
-
-## 深度优先搜索
-
-## 广度优先搜索
+```bash
+$ yarn start
+```
