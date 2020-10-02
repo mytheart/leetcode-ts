@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leetcode 调试</title>
+</head>
+
+<body>
+  <script>
+    // https://leetcode-cn.com/problems/coin-change/
+//     给定 nums = [2, 7, 11, 15], target = 9
+
+// 因为 nums[0] + nums[1] = 2 + 7 = 9
+// 所以返回 [0, 1]
+
+    const nums = [2,5,5,11];
+    const target = 10;
+
+    var twoSum = function (nums, target) {
+      const len = nums.length;
+      for (let i = 0; i < len; i++) {
+        for (let j = i + 1; j < len ; j++) {
+          console.log(i+'-'+j)
+          if (target - nums[i] === nums[j]) {
+            // console.log([i, j])
+            return [i, j]
+          }
+        }
+      }
+    };
+
+    console.log(twoSum(nums, target))
+  </script>
+</body>
+
+</html>
