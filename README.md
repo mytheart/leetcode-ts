@@ -1,5 +1,13 @@
-# leetcode-ts
-使用 TypeScript + React + Vite 练习 leetcode
+# leetcode
+
+## 分支
+- master：react + ts + vite练习leetcode
+- umi: umi项目练习leetcode
+- react-templete: umi3 + antd搭建的react项目模板
+
+## 笔记
+- [掘金笔记地址](https://juejin.im/post/6879764922301939720)
+- [b站js算法视频](https://www.bilibili.com/video/BV1wA411b7qZ)
 
 ## 字符串/数组
 
