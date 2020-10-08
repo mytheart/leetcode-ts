@@ -37,33 +37,33 @@
 // 2 2
 // 3 3
 // 4 5
+/**
+ * @param {string} text1
+ * @param {string} text2
+ * @return {number}
+ */
+// var longestCommonSubsequence = function(text1: string, text2: string) :string {
 
-function climbStairs(n) {
-  var temp = {};
+//   if (text1 === '' || text2 === '') {
+//     return '';
+//   }
 
-  function count(n) {
-    let result;
+//   let result = '';
 
-    if (temp[n]) {
-      return temp[n];
-    }
+//   if (text1[0] === text2[0]) {
+//     result = text1[0] + longestCommonSubsequence(text1.substr(1), text2.substr(1));
+//   } else {
+//     let lcs1 = longestCommonSubsequence(text1.substr(1), text2)
+//     let lcs2 = longestCommonSubsequence(text1, text2.substr(1));
 
-    if (n <= 0) {
-      result = 0;
-    } else if (n === 1) {
-      result = 1;
-    } else if (n === 2) {
-      result = 2;
-    } else {
-      result = count(n - 1) + count(n - 2);
-    }
+//     result = lcs1.length > lcs2.length ? lcs1 : lcs2;
+//   }
 
-    temp[n] = result;
+//   console.log('result', result)
+//   return result;
+// };
 
-    return result;
-  }
+var addTwoNumbers = function(l1, l2) {};
 
-  return count(n);
-}
-
-console.log(climbStairs(10));
+// [2,4,3]
+// [5,6,4]
