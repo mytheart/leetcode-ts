@@ -1,34 +1,68 @@
-# leetcode
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 分支
-- master：react + ts + vite练习leetcode
-- umi: umi项目练习leetcode
-- react-templete: umi3 + antd搭建的react项目模板
+## Available Scripts
 
-## 笔记
-- [掘金笔记地址](https://juejin.im/post/6879764922301939720)
-- [b站js算法视频](https://www.bilibili.com/video/BV1wA411b7qZ)
+In the project directory, you can run:
 
-## 字符串/数组
+### `yarn start`
 
-## 二分查找
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## 递归
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## 二叉树
+### `yarn test`
 
-## 动态规划
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 链表
+### `yarn build`
 
-## 栈/队列
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 排序
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-## 贪心算法
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 双指针
+### `yarn eject`
 
-## 深度优先搜索
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## 广度优先搜索
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
