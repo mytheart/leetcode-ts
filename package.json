@@ -23,12 +23,14 @@
     "@ant-design/pro-layout": "^5.0.12",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.2.21",
-    "ahooks": "^2.6.1",
+    "ahooks": "^2.7.1",
     "lint-staged": "^10.0.7",
     "mockjs": "^1.1.0",
     "prettier": "^1.19.1",
+    "proxy-hooks": "^0.3.9",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-use": "^15.3.4",
     "umi": "^3.2.21",
     "yorkie": "^2.0.0"
   }

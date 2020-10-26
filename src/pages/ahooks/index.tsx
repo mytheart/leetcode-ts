@@ -1,35 +1,36 @@
-import { useRequest } from 'ahooks';
-import Mock from 'mockjs';
-import React from 'react';
+// 输入：coins = [1, 2, 5], amount = 11
+// 输出：3
+// 解释：11 = 5 + 5 + 1
 
-async function getEmail(search: string): Promise<string[]> {
-  console.log(search);
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve(Mock.mock({ 'data|5': ['@email'] }).data);
-    }, 100);
-  });
+// 硬币找零
+
+function coinChange(coins, amount) {
+  coins.sort((a, b) => b - a);
+
+  const _coinChange = amount => {
+    console.log(11);
+    if (amount <= 0) {
+      return [];
+    }
+
+    let max;
+
+    for (let el of coins) {
+      if (el < amount) {
+        max = el;
+        break;
+      }
+    }
+
+    console.log(amount - max);
+
+    const next = _coinChange(amount - max);
+    // const next = [];
+
+    return [max, ...next];
+  };
+
+  return _coinChange(amount).length;
 }
 
-export default () => {
-  const { data, loading, run } = useRequest(getEmail, {
-    throttleInterval: 400,
-    manual: true,
-  });
-
-  return (
-    <div>
-      <p>Enter quickly to see the effect</p>
-      <input placeholder="Select Emails" onChange={e => run(e.target.value)} />
-      {loading ? (
-        <p>loading</p>
-      ) : (
-        <ul style={{ marginTop: 8 }}>
-          {data?.map(i => (
-            <li key={i}>{i}</li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-};
+console.log(11, coinChange([1, 2, 5], 11));
