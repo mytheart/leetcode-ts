@@ -1,7 +1,15 @@
 import React, { useEffect, memo, useState, useCallback, useMemo } from 'react';
 import { useReactive } from 'proxy-hooks';
+import { Button, Select } from 'antd';
+import { PoweroffOutlined } from '@ant-design/icons';
+
+import styles from './index.less';
+
+const { Option, OptGroup } = Select;
 
 const Demo = () => {
+  console.log(1, styles);
+
   const [state] = useReactive({ n: 10 });
 
   const [count, setCount] = useState(0);
@@ -79,8 +87,12 @@ const Demo = () => {
     console.log(state.n);
   }, [n]);
 
+  function handleChange(value) {
+    console.log(`selected ${value}`);
+  }
+
   return (
-    <div>
+    <div className={styles.page}>
       <p>n: {state.n}</p>
 
       <p>count: {count}</p>
@@ -98,6 +110,36 @@ const Demo = () => {
       <button onClick={onChangeLoading}>changeLoading</button>
 
       <button onClick={onChangeParams}>changeParams</button>
+
+      <Button className="dsds" type="primary" icon={<PoweroffOutlined />}>
+        Click me!
+      </Button>
+
+      <Test className={styles.myBtn}>test</Test>
+
+      <div className={styles.box}>
+        <Button className="dsds" type="primary" icon={<PoweroffOutlined />}>
+          Click me!
+        </Button>
+      </div>
+
+      <div className={styles.selectBox}>
+        <Select
+          defaultValue="lucy"
+          style={{ width: 200 }}
+          onChange={handleChange}
+          className={styles.mySelect}
+        >
+          <OptGroup label="Manager">
+            <Option value="jack">Jack</Option>
+            <Option value="lucy">Lucy</Option>
+          </OptGroup>
+          <OptGroup label="Engineer">
+            <Option value="Yiminghe">yiminghe</Option>
+          </OptGroup>
+        </Select>
+        ,
+      </div>
     </div>
   );
 };
@@ -114,4 +156,14 @@ function getData(params) {
       res([...originData]);
     }, 1500);
   });
+}
+
+function Test(props) {
+  console.log(222, props);
+  return (
+    <section className={`test ${props.className}`}>
+      <p>section</p>
+      <p>section test</p>
+    </section>
+  );
 }

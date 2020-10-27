@@ -1,14 +1,27 @@
-.pcPage {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page {
+  padding: 15px;
 
-  .iframe {
-    width: 400px;
-    border-radius: 15px;
-    height: 95vh;
-    box-shadow: 0px 2px 4px 0px rgba(212, 212, 212, 1);
+  .myBtn {
+    border: 1px solid #000;
+  }
+
+  .box {
+    :global {
+      .ant-btn {
+        // color: red;
+        border: 1px solid red;
+      }
+    }
+  }
+
+  .selectBox {
+    border: 1px solid yellow;
+    margin-top: 20px;
+
+    :global {
+      .ant-select {
+        color: red;
+      }
+    }
   }
 }
